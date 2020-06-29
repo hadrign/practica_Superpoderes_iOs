@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7D3916DD2493F05F0008BC55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3916DC2493F05F0008BC55 /* AppDelegate.swift */; };
+		7D3916DF2493F05F0008BC55 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3916DE2493F05F0008BC55 /* SceneDelegate.swift */; };
+		7D3916E62493F0600008BC55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D3916E52493F0600008BC55 /* Assets.xcassets */; };
+		7D3916E92493F0600008BC55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D3916E72493F0600008BC55 /* LaunchScreen.storyboard */; };
+		7D3916F22493F4F60008BC55 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3916F12493F4F60008BC55 /* UIViewController+Extensions.swift */; };
+		7D3917262493F5AF0008BC55 /* ship.scn in Resources */ = {isa = PBXBuildFile; fileRef = 7D39171B2493F5AF0008BC55 /* ship.scn */; };
+		7D3917272493F5AF0008BC55 /* Archivo comprimido.zip in Resources */ = {isa = PBXBuildFile; fileRef = 7D39171C2493F5AF0008BC55 /* Archivo comprimido.zip */; };
+		7D3917282493F5AF0008BC55 /* texture.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D39171D2493F5AF0008BC55 /* texture.png */; };
+		7D3917292493F5AF0008BC55 /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D39171E2493F5AF0008BC55 /* Plane.swift */; };
+		7D39172A2493F5AF0008BC55 /* Bullet.scn in Resources */ = {isa = PBXBuildFile; fileRef = 7D3917202493F5AF0008BC55 /* Bullet.scn */; };
+		7D39172B2493F5AF0008BC55 /* Bullet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3917212493F5AF0008BC55 /* Bullet.swift */; };
+		7D39172C2493F5AF0008BC55 /* Explossion.scnp in Resources */ = {isa = PBXBuildFile; fileRef = 7D3917232493F5AF0008BC55 /* Explossion.scnp */; };
+		7D39172D2493F5AF0008BC55 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D3917242493F5AF0008BC55 /* spark.png */; };
+		7D39172E2493F5AF0008BC55 /* Explossion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3917252493F5AF0008BC55 /* Explossion.swift */; };
+		7D3917492493F6A20008BC55 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3917432493F6A20008BC55 /* AppCoordinator.swift */; };
+		7D39174E2493F6A20008BC55 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3917482493F6A20008BC55 /* Coordinator.swift */; };
+		7D3917502493F7C60008BC55 /* InitScreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D39174F2493F7C60008BC55 /* InitScreenCoordinator.swift */; };
+		7D3917542493FF030008BC55 /* InitScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3917532493FF030008BC55 /* InitScreenViewModel.swift */; };
+		7D3917562493FF3D0008BC55 /* InitScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3917552493FF3D0008BC55 /* InitScreenViewController.swift */; };
+		7D39175A2493FF950008BC55 /* InitScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D3917592493FF950008BC55 /* InitScreen.xib */; };
+		7D39175C2493FFF70008BC55 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D39175B2493FFF70008BC55 /* GameViewModel.swift */; };
+		7D39175E249400070008BC55 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D39175D249400070008BC55 /* GameViewController.swift */; };
+		7D391762249400550008BC55 /* Game.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D391761249400550008BC55 /* Game.xib */; };
+		7D391764249402C60008BC55 /* KamikazeWarDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D391763249402C60008BC55 /* KamikazeWarDataManager.swift */; };
+		7D391767249DED040008BC55 /* Superbullet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D391766249DED040008BC55 /* Superbullet.swift */; };
+		7D391769249DEE480008BC55 /* Collisions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D391768249DEE480008BC55 /* Collisions.swift */; };
+		7D39176B249DEFF10008BC55 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D39176A249DEFF10008BC55 /* Box.swift */; };
+		7DE6AFF224A8C49D0097E897 /* HealthBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE6AFF124A8C49D0097E897 /* HealthBar.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7D3916D92493F05F0008BC55 /* Kamikaze War.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kamikaze War.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D3916DC2493F05F0008BC55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7D3916DE2493F05F0008BC55 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7D3916E52493F0600008BC55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7D3916E82493F0600008BC55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7D3916EA2493F0600008BC55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D3916F12493F4F60008BC55 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		7D39171B2493F5AF0008BC55 /* ship.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = ship.scn; sourceTree = "<group>"; };
+		7D39171C2493F5AF0008BC55 /* Archivo comprimido.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = "Archivo comprimido.zip"; sourceTree = "<group>"; };
+		7D39171D2493F5AF0008BC55 /* texture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = texture.png; sourceTree = "<group>"; };
+		7D39171E2493F5AF0008BC55 /* Plane.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plane.swift; sourceTree = "<group>"; };
+		7D3917202493F5AF0008BC55 /* Bullet.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Bullet.scn; sourceTree = "<group>"; };
+		7D3917212493F5AF0008BC55 /* Bullet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bullet.swift; sourceTree = "<group>"; };
+		7D3917232493F5AF0008BC55 /* Explossion.scnp */ = {isa = PBXFileReference; lastKnownFileType = file.scp; path = Explossion.scnp; sourceTree = "<group>"; };
+		7D3917242493F5AF0008BC55 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		7D3917252493F5AF0008BC55 /* Explossion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Explossion.swift; sourceTree = "<group>"; };
+		7D3917432493F6A20008BC55 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		7D3917482493F6A20008BC55 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		7D39174F2493F7C60008BC55 /* InitScreenCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitScreenCoordinator.swift; sourceTree = "<group>"; };
+		7D3917532493FF030008BC55 /* InitScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitScreenViewModel.swift; sourceTree = "<group>"; };
+		7D3917552493FF3D0008BC55 /* InitScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitScreenViewController.swift; sourceTree = "<group>"; };
+		7D3917592493FF950008BC55 /* InitScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InitScreen.xib; sourceTree = "<group>"; };
+		7D39175B2493FFF70008BC55 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		7D39175D249400070008BC55 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		7D391761249400550008BC55 /* Game.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Game.xib; sourceTree = "<group>"; };
+		7D391763249402C60008BC55 /* KamikazeWarDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KamikazeWarDataManager.swift; sourceTree = "<group>"; };
+		7D391766249DED040008BC55 /* Superbullet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Superbullet.swift; sourceTree = "<group>"; };
+		7D391768249DEE480008BC55 /* Collisions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Collisions.swift; sourceTree = "<group>"; };
+		7D39176A249DEFF10008BC55 /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
+		7DE6AFF124A8C49D0097E897 /* HealthBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthBar.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7D3916D62493F05F0008BC55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7D3916D02493F05F0008BC55 = {
+			isa = PBXGroup;
+			children = (
+				7D3916DB2493F05F0008BC55 /* Kamikaze War */,
+				7D3916DA2493F05F0008BC55 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7D3916DA2493F05F0008BC55 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7D3916D92493F05F0008BC55 /* Kamikaze War.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7D3916DB2493F05F0008BC55 /* Kamikaze War */ = {
+			isa = PBXGroup;
+			children = (
+				7D3916F02493F4F60008BC55 /* Extensions */,
+				7D3916F32493F5000008BC55 /* Model */,
+				7D39172F2493F5DC0008BC55 /* DataManager */,
+				7D3917402493F6000008BC55 /* InitScreen */,
+				7D3917412493F61E0008BC55 /* Game */,
+				7D3917422493F6A20008BC55 /* Coordinator */,
+				7D3916DC2493F05F0008BC55 /* AppDelegate.swift */,
+				7D3916DE2493F05F0008BC55 /* SceneDelegate.swift */,
+				7D3916E52493F0600008BC55 /* Assets.xcassets */,
+				7D3916E72493F0600008BC55 /* LaunchScreen.storyboard */,
+				7D3916EA2493F0600008BC55 /* Info.plist */,
+			);
+			path = "Kamikaze War";
+			sourceTree = "<group>";
+		};
+		7D3916F02493F4F60008BC55 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7D3916F12493F4F60008BC55 /* UIViewController+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7D3916F32493F5000008BC55 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7D391768249DEE480008BC55 /* Collisions.swift */,
+				7D391765249DECE30008BC55 /* Superbullet */,
+				7D39171F2493F5AF0008BC55 /* Bullet */,
+				7D3917222493F5AF0008BC55 /* Effects */,
+				7D39171A2493F5AF0008BC55 /* Plane */,
+				7DE6AFF024A8C4870097E897 /* HealthBar */,
+				7D3917182493F5730008BC55 /* Box */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7D3917182493F5730008BC55 /* Box */ = {
+			isa = PBXGroup;
+			children = (
+				7D39176A249DEFF10008BC55 /* Box.swift */,
+			);
+			path = Box;
+			sourceTree = "<group>";
+		};
+		7D39171A2493F5AF0008BC55 /* Plane */ = {
+			isa = PBXGroup;
+			children = (
+				7D39171B2493F5AF0008BC55 /* ship.scn */,
+				7D39171C2493F5AF0008BC55 /* Archivo comprimido.zip */,
+				7D39171D2493F5AF0008BC55 /* texture.png */,
+				7D39171E2493F5AF0008BC55 /* Plane.swift */,
+			);
+			path = Plane;
+			sourceTree = "<group>";
+		};
+		7D39171F2493F5AF0008BC55 /* Bullet */ = {
+			isa = PBXGroup;
+			children = (
+				7D3917202493F5AF0008BC55 /* Bullet.scn */,
+				7D3917212493F5AF0008BC55 /* Bullet.swift */,
+			);
+			path = Bullet;
+			sourceTree = "<group>";
+		};
+		7D3917222493F5AF0008BC55 /* Effects */ = {
+			isa = PBXGroup;
+			children = (
+				7D3917232493F5AF0008BC55 /* Explossion.scnp */,
+				7D3917242493F5AF0008BC55 /* spark.png */,
+				7D3917252493F5AF0008BC55 /* Explossion.swift */,
+			);
+			path = Effects;
+			sourceTree = "<group>";
+		};
+		7D39172F2493F5DC0008BC55 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				7D391763249402C60008BC55 /* KamikazeWarDataManager.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		7D3917402493F6000008BC55 /* InitScreen */ = {
+			isa = PBXGroup;
+			children = (
+				7D3917532493FF030008BC55 /* InitScreenViewModel.swift */,
+				7D3917552493FF3D0008BC55 /* InitScreenViewController.swift */,
+				7D3917592493FF950008BC55 /* InitScreen.xib */,
+			);
+			path = InitScreen;
+			sourceTree = "<group>";
+		};
+		7D3917412493F61E0008BC55 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				7D39175B2493FFF70008BC55 /* GameViewModel.swift */,
+				7D39175D249400070008BC55 /* GameViewController.swift */,
+				7D391761249400550008BC55 /* Game.xib */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		7D3917422493F6A20008BC55 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				7D3917432493F6A20008BC55 /* AppCoordinator.swift */,
+				7D3917482493F6A20008BC55 /* Coordinator.swift */,
+				7D39174F2493F7C60008BC55 /* InitScreenCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		7D391765249DECE30008BC55 /* Superbullet */ = {
+			isa = PBXGroup;
+			children = (
+				7D391766249DED040008BC55 /* Superbullet.swift */,
+			);
+			path = Superbullet;
+			sourceTree = "<group>";
+		};
+		7DE6AFF024A8C4870097E897 /* HealthBar */ = {
+			isa = PBXGroup;
+			children = (
+				7DE6AFF124A8C49D0097E897 /* HealthBar.swift */,
+			);
+			path = HealthBar;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7D3916D82493F05F0008BC55 /* Kamikaze War */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D3916ED2493F0600008BC55 /* Build configuration list for PBXNativeTarget "Kamikaze War" */;
+			buildPhases = (
+				7D3916D52493F05F0008BC55 /* Sources */,
+				7D3916D62493F05F0008BC55 /* Frameworks */,
+				7D3916D72493F05F0008BC55 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Kamikaze War";
+			productName = "Kamikaze War";
+			productReference = 7D3916D92493F05F0008BC55 /* Kamikaze War.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7D3916D12493F05F0008BC55 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Hadrian Grille Negreira";
+				TargetAttributes = {
+					7D3916D82493F05F0008BC55 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 7D3916D42493F05F0008BC55 /* Build configuration list for PBXProject "Kamikaze War" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7D3916D02493F05F0008BC55;
+			productRefGroup = 7D3916DA2493F05F0008BC55 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7D3916D82493F05F0008BC55 /* Kamikaze War */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7D3916D72493F05F0008BC55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D3917282493F5AF0008BC55 /* texture.png in Resources */,
+				7D391762249400550008BC55 /* Game.xib in Resources */,
+				7D39175A2493FF950008BC55 /* InitScreen.xib in Resources */,
+				7D39172C2493F5AF0008BC55 /* Explossion.scnp in Resources */,
+				7D3916E92493F0600008BC55 /* LaunchScreen.storyboard in Resources */,
+				7D3916E62493F0600008BC55 /* Assets.xcassets in Resources */,
+				7D3917272493F5AF0008BC55 /* Archivo comprimido.zip in Resources */,
+				7D39172D2493F5AF0008BC55 /* spark.png in Resources */,
+				7D39172A2493F5AF0008BC55 /* Bullet.scn in Resources */,
+				7D3917262493F5AF0008BC55 /* ship.scn in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7D3916D52493F05F0008BC55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D3916F22493F4F60008BC55 /* UIViewController+Extensions.swift in Sources */,
+				7DE6AFF224A8C49D0097E897 /* HealthBar.swift in Sources */,
+				7D39175C2493FFF70008BC55 /* GameViewModel.swift in Sources */,
+				7D39172E2493F5AF0008BC55 /* Explossion.swift in Sources */,
+				7D391767249DED040008BC55 /* Superbullet.swift in Sources */,
+				7D391769249DEE480008BC55 /* Collisions.swift in Sources */,
+				7D39175E249400070008BC55 /* GameViewController.swift in Sources */,
+				7D391764249402C60008BC55 /* KamikazeWarDataManager.swift in Sources */,
+				7D39174E2493F6A20008BC55 /* Coordinator.swift in Sources */,
+				7D3917292493F5AF0008BC55 /* Plane.swift in Sources */,
+				7D39176B249DEFF10008BC55 /* Box.swift in Sources */,
+				7D3916DD2493F05F0008BC55 /* AppDelegate.swift in Sources */,
+				7D3917542493FF030008BC55 /* InitScreenViewModel.swift in Sources */,
+				7D3917562493FF3D0008BC55 /* InitScreenViewController.swift in Sources */,
+				7D3916DF2493F05F0008BC55 /* SceneDelegate.swift in Sources */,
+				7D3917492493F6A20008BC55 /* AppCoordinator.swift in Sources */,
+				7D39172B2493F5AF0008BC55 /* Bullet.swift in Sources */,
+				7D3917502493F7C60008BC55 /* InitScreenCoordinator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7D3916E72493F0600008BC55 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7D3916E82493F0600008BC55 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7D3916EB2493F0600008BC55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7D3916EC2493F0600008BC55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7D3916EE2493F0600008BC55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P3SD399C89;
+				INFOPLIST_FILE = "Kamikaze War/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hadrign.Kamikaze-War";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7D3916EF2493F0600008BC55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P3SD399C89;
+				INFOPLIST_FILE = "Kamikaze War/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hadrign.Kamikaze-War";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7D3916D42493F05F0008BC55 /* Build configuration list for PBXProject "Kamikaze War" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D3916EB2493F0600008BC55 /* Debug */,
+				7D3916EC2493F0600008BC55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D3916ED2493F0600008BC55 /* Build configuration list for PBXNativeTarget "Kamikaze War" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D3916EE2493F0600008BC55 /* Debug */,
+				7D3916EF2493F0600008BC55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7D3916D12493F05F0008BC55 /* Project object */;
+}
